@@ -23,7 +23,8 @@ bash kafka-scripts/create_topic.sh
 
 python3 kafka-scripts/producer.py
 
-python3 kafka-scripts/consumer.py & CONSUMER_PID=$!
+python3 kafka-scripts/consumer.py 
+
 
 
 
