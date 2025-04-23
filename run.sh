@@ -19,6 +19,6 @@ bash kafka-scripts/create_topic.sh
 
 # Produce and consume
 python3 kafka-scripts/producer.py
-timeout 5
+
 python3 kafka-scripts/consumer.py
 
