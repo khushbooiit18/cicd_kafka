@@ -6,6 +6,7 @@ pipeline {
       steps {
         sh 'chmod +x run.sh && ./run.sh'
       }
+}
       stage('Clone') {
             steps {
                 git clone 'https://github.com/khushbooiit18/cicd_kafka.git'
@@ -13,4 +14,4 @@ pipeline {
         }
     }
 }
-}
+
