@@ -7,6 +7,5 @@ for i in range(5):
     producer.send('test-topic', msg)
     print(f"Produced: {msg}")
     time.sleep(1)
-    producer.flush()
 producer.close()
 
