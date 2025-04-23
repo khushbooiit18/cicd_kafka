@@ -17,8 +17,14 @@ pip install -r requirements.txt
 # Create topic
 bash kafka-scripts/create_topic.sh
 
+
+
 # Produce and consume
+python3 kafka-scripts/consumer.py & CONSUMER_PID=$!
 python3 kafka-scripts/producer.py
 
-python3 kafka-scripts/consumer.py
+sleep 5
+kill "$CONSUMER_PID"
+
+
 
