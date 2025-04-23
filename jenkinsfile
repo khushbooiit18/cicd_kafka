@@ -9,7 +9,7 @@ pipeline {
 }
       stage('Clone') {
             steps {
-                git clone 'https://github.com/khushbooiit18/cicd_kafka.git'
+                sh 'git clone https://github.com/khushbooiit18/cicd_kafka.git'
             }
         }
     }
